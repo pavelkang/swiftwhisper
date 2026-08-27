@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+
+# Xcode build output
+DerivedData/
+build/
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Xcode user-specific settings
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Playgrounds
+timeline.xctimeline
+playground.xcworkspace/
+
+# Dependency managers
+Carthage/Build/
+Pods/
+
+# Editor files
+.vscode/
+*.swp
+*~
