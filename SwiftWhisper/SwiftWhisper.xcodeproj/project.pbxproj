@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* MoonshineVoice in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000011 /* MoonshineVoice */; };
+		A10000000000000000000002 /* Qwen3ASR in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000012 /* Qwen3ASR */; };
+		A10000000000000000000003 /* AudioCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000013 /* AudioCommon */; };
+		A10000000000000000000004 /* Qwen3Chat in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000014 /* Qwen3Chat */; };
+		A10000000000000000000005 /* Qwen3Chat in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000014 /* Qwen3Chat */; };
+		A10000000000000000000006 /* AudioCommon in Frameworks */ = {isa = PBXBuildFile; productRef = A10000000000000000000013 /* AudioCommon */; };
+		B10000000000000000000001 /* SwiftWhisper/Core/ASRTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000011 /* SwiftWhisper/Core/ASRTypes.swift */; };
+		B10000000000000000000002 /* SwiftWhisper/Core/DictationFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000012 /* SwiftWhisper/Core/DictationFailure.swift */; };
+		B10000000000000000000003 /* SwiftWhisper/Core/TranscriptionLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000013 /* SwiftWhisper/Core/TranscriptionLanguage.swift */; };
+		B10000000000000000000004 /* SwiftWhisper/Core/VocabularyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000014 /* SwiftWhisper/Core/VocabularyStore.swift */; };
+		B10000000000000000000005 /* SwiftWhisper/Platform/AudioCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000015 /* SwiftWhisper/Platform/AudioCaptureService.swift */; };
+		B10000000000000000000006 /* SwiftWhisper/Platform/AppleSpeechEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000016 /* SwiftWhisper/Platform/AppleSpeechEngine.swift */; };
+		B10000000000000000000007 /* SwiftWhisper/Platform/DictationHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000017 /* SwiftWhisper/Platform/DictationHistoryStore.swift */; };
+		B10000000000000000000008 /* SwiftWhisper/Core/SmartPolishSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000018 /* SwiftWhisper/Core/SmartPolishSetting.swift */; };
+		B10000000000000000000009 /* SwiftWhisper/Platform/SmartPolishService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000019 /* SwiftWhisper/Platform/SmartPolishService.swift */; };
+		B1000000000000000000000A /* SwiftWhisper/Platform/PolishModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001A /* SwiftWhisper/Platform/PolishModelManager.swift */; };
+		B1000000000000000000000B /* SwiftWhisper/Platform/DiagnosticsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1000000000000000000001B /* SwiftWhisper/Platform/DiagnosticsLog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F80CB42303FD8960065771F /* SwiftWhisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWhisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000010 /* SwiftWhisperMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftWhisperMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000011 /* SwiftWhisper/Core/ASRTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Core/ASRTypes.swift; sourceTree = "<group>"; };
+		B10000000000000000000012 /* SwiftWhisper/Core/DictationFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Core/DictationFailure.swift; sourceTree = "<group>"; };
+		B10000000000000000000013 /* SwiftWhisper/Core/TranscriptionLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Core/TranscriptionLanguage.swift; sourceTree = "<group>"; };
+		B10000000000000000000014 /* SwiftWhisper/Core/VocabularyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Core/VocabularyStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000015 /* SwiftWhisper/Platform/AudioCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Platform/AudioCaptureService.swift; sourceTree = "<group>"; };
+		B10000000000000000000016 /* SwiftWhisper/Platform/AppleSpeechEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Platform/AppleSpeechEngine.swift; sourceTree = "<group>"; };
+		B10000000000000000000017 /* SwiftWhisper/Platform/DictationHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Platform/DictationHistoryStore.swift; sourceTree = "<group>"; };
+		B10000000000000000000018 /* SwiftWhisper/Core/SmartPolishSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Core/SmartPolishSetting.swift; sourceTree = "<group>"; };
+		B10000000000000000000019 /* SwiftWhisper/Platform/SmartPolishService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Platform/SmartPolishService.swift; sourceTree = "<group>"; };
+		B1000000000000000000001A /* SwiftWhisper/Platform/PolishModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Platform/PolishModelManager.swift; sourceTree = "<group>"; };
+		B1000000000000000000001B /* SwiftWhisper/Platform/DiagnosticsLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWhisper/Platform/DiagnosticsLog.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		9F80CB44303FD8960065771F /* SwiftWhisper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwiftWhisper;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000020 /* SwiftWhisperMobile */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwiftWhisperMobile;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F80CB3F303FD8960065771F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* MoonshineVoice in Frameworks */,
+				A10000000000000000000002 /* Qwen3ASR in Frameworks */,
+				A10000000000000000000003 /* AudioCommon in Frameworks */,
+				A10000000000000000000004 /* Qwen3Chat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000005 /* Qwen3Chat in Frameworks */,
+				A10000000000000000000006 /* AudioCommon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F80CB39303FD8960065771F = {
+			isa = PBXGroup;
+			children = (
+				9F80CB44303FD8960065771F /* SwiftWhisper */,
+				B10000000000000000000020 /* SwiftWhisperMobile */,
+				B10000000000000000000022 /* Shared iOS Sources */,
+				9F80CB43303FD8960065771F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F80CB43303FD8960065771F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F80CB42303FD8960065771F /* SwiftWhisper.app */,
+				B10000000000000000000010 /* SwiftWhisperMobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B10000000000000000000022 /* Shared iOS Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B10000000000000000000011 /* SwiftWhisper/Core/ASRTypes.swift */,
+				B10000000000000000000012 /* SwiftWhisper/Core/DictationFailure.swift */,
+				B10000000000000000000013 /* SwiftWhisper/Core/TranscriptionLanguage.swift */,
+				B10000000000000000000014 /* SwiftWhisper/Core/VocabularyStore.swift */,
+				B10000000000000000000015 /* SwiftWhisper/Platform/AudioCaptureService.swift */,
+				B10000000000000000000016 /* SwiftWhisper/Platform/AppleSpeechEngine.swift */,
+				B10000000000000000000017 /* SwiftWhisper/Platform/DictationHistoryStore.swift */,
+				B10000000000000000000018 /* SwiftWhisper/Core/SmartPolishSetting.swift */,
+				B10000000000000000000019 /* SwiftWhisper/Platform/SmartPolishService.swift */,
+				B1000000000000000000001A /* SwiftWhisper/Platform/PolishModelManager.swift */,
+				B1000000000000000000001B /* SwiftWhisper/Platform/DiagnosticsLog.swift */,
+			);
+			name = "Shared iOS Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F80CB41303FD8960065771F /* SwiftWhisper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F80CB4D303FD8970065771F /* Build configuration list for PBXNativeTarget "SwiftWhisper" */;
+			buildPhases = (
+				9F80CB3E303FD8960065771F /* Sources */,
+				9F80CB3F303FD8960065771F /* Frameworks */,
+				9F80CB40303FD8960065771F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9F80CB44303FD8960065771F /* SwiftWhisper */,
+			);
+			name = SwiftWhisper;
+			packageProductDependencies = (
+				A10000000000000000000011 /* MoonshineVoice */,
+				A10000000000000000000012 /* Qwen3ASR */,
+				A10000000000000000000013 /* AudioCommon */,
+				A10000000000000000000014 /* Qwen3Chat */,
+			);
+			productName = SwiftWhisper;
+			productReference = 9F80CB42303FD8960065771F /* SwiftWhisper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B10000000000000000000030 /* SwiftWhisperMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10000000000000000000040 /* Build configuration list for PBXNativeTarget "SwiftWhisperMobile" */;
+			buildPhases = (
+				B10000000000000000000031 /* Sources */,
+				B10000000000000000000021 /* Frameworks */,
+				B10000000000000000000032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B10000000000000000000020 /* SwiftWhisperMobile */,
+			);
+			name = SwiftWhisperMobile;
+			packageProductDependencies = (
+				A10000000000000000000013 /* AudioCommon */,
+				A10000000000000000000014 /* Qwen3Chat */,
+			);
+			productName = SwiftWhisperMobile;
+			productReference = B10000000000000000000010 /* SwiftWhisperMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F80CB3A303FD8960065771F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					9F80CB41303FD8960065771F = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					B10000000000000000000030 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = 9F80CB3D303FD8960065771F /* Build configuration list for PBXProject "SwiftWhisper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F80CB39303FD8960065771F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A10000000000000000000021 /* XCRemoteSwiftPackageReference "moonshine-swift" */,
+				A10000000000000000000022 /* XCRemoteSwiftPackageReference "speech-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9F80CB43303FD8960065771F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F80CB41303FD8960065771F /* SwiftWhisper */,
+				B10000000000000000000030 /* SwiftWhisperMobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F80CB40303FD8960065771F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F80CB3E303FD8960065771F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10000000000000000000031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000000000000000000001 /* SwiftWhisper/Core/ASRTypes.swift in Sources */,
+				B10000000000000000000002 /* SwiftWhisper/Core/DictationFailure.swift in Sources */,
+				B10000000000000000000003 /* SwiftWhisper/Core/TranscriptionLanguage.swift in Sources */,
+				B10000000000000000000004 /* SwiftWhisper/Core/VocabularyStore.swift in Sources */,
+				B10000000000000000000005 /* SwiftWhisper/Platform/AudioCaptureService.swift in Sources */,
+				B10000000000000000000006 /* SwiftWhisper/Platform/AppleSpeechEngine.swift in Sources */,
+				B10000000000000000000007 /* SwiftWhisper/Platform/DictationHistoryStore.swift in Sources */,
+				B10000000000000000000008 /* SwiftWhisper/Core/SmartPolishSetting.swift in Sources */,
+				B10000000000000000000009 /* SwiftWhisper/Platform/SmartPolishService.swift in Sources */,
+				B1000000000000000000000A /* SwiftWhisper/Platform/PolishModelManager.swift in Sources */,
+				B1000000000000000000000B /* SwiftWhisper/Platform/DiagnosticsLog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9F80CB4B303FD8970065771F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 24MBG2S879;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F80CB4C303FD8970065771F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 24MBG2S879;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9F80CB4E303FD8970065771F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftWhisper/SwiftWhisper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TYS32Z4DEC;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Configuration/MacInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftWhisper;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SwiftWhisper records audio only while you dictate and processes it on this Mac.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SwiftWhisper uses Apple’s on-device speech model to turn your voice into text.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftwhisper.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFTWHISPER_SUPPORT_EMAIL = "eeveearchie@gmail.com";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		9F80CB4F303FD8970065771F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftWhisper/SwiftWhisper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TYS32Z4DEC;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Configuration/MacInfo.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftWhisper;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SwiftWhisper records audio only while you dictate and processes it on this Mac.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SwiftWhisper uses Apple’s on-device speech model to turn your voice into text.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftwhisper.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFTWHISPER_SUPPORT_EMAIL = "eeveearchie@gmail.com";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		B10000000000000000000041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftWhisperMobile/SwiftWhisperMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24MBG2S879;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftWhisper;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SwiftWhisper records audio only while you dictate and processes it on this device.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SwiftWhisper uses Apple’s on-device speech model to turn your voice into text.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftwhisper.app.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B10000000000000000000042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftWhisperMobile/SwiftWhisperMobile.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24MBG2S879;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftWhisper;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SwiftWhisper records audio only while you dictate and processes it on this device.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SwiftWhisper uses Apple’s on-device speech model to turn your voice into text.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftwhisper.app.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F80CB3D303FD8960065771F /* Build configuration list for PBXProject "SwiftWhisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F80CB4B303FD8970065771F /* Debug */,
+				9F80CB4C303FD8970065771F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F80CB4D303FD8970065771F /* Build configuration list for PBXNativeTarget "SwiftWhisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F80CB4E303FD8970065771F /* Debug */,
+				9F80CB4F303FD8970065771F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10000000000000000000040 /* Build configuration list for PBXNativeTarget "SwiftWhisperMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10000000000000000000041 /* Debug */,
+				B10000000000000000000042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A10000000000000000000021 /* XCRemoteSwiftPackageReference "moonshine-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/moonshine-ai/moonshine-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		A10000000000000000000022 /* XCRemoteSwiftPackageReference "speech-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soniqo/speech-swift.git";
+			requirement = {
+				kind = revision;
+				revision = 2723d1c2754fae2921fd4c475eb2594e88f7de39;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A10000000000000000000011 /* MoonshineVoice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000021 /* XCRemoteSwiftPackageReference "moonshine-swift" */;
+			productName = MoonshineVoice;
+		};
+		A10000000000000000000012 /* Qwen3ASR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000022 /* XCRemoteSwiftPackageReference "speech-swift" */;
+			productName = Qwen3ASR;
+		};
+		A10000000000000000000013 /* AudioCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000022 /* XCRemoteSwiftPackageReference "speech-swift" */;
+			productName = AudioCommon;
+		};
+		A10000000000000000000014 /* Qwen3Chat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A10000000000000000000022 /* XCRemoteSwiftPackageReference "speech-swift" */;
+			productName = Qwen3Chat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9F80CB3A303FD8960065771F /* Project object */;
+}
