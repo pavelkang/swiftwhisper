@@ -31,3 +31,6 @@ Pods/
 .vscode/
 *.swp
 *~
+
+# SwiftWhisperMobile (not meant to be committed)
+SwiftWhisper/SwiftWhisperMobile/
